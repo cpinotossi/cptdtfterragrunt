@@ -42,3 +42,15 @@ terragrunt validate --log-level debug --inputs-debug
 ## Lesson learned
 
 - In case you make use of Azure Storage Account as backend, you need to make sure that the container already exists. This is strange because the documentation says that it will be created automatically. But it does not work for me. So I created the container manually.
+
+
+# Misc
+
+~~~powershell
+# create pub github repo
+git init
+gh repo create cptdtfterragrunt --public --source . --remote origin
+git status
+git add .
+git commit -m "Initial commit"
+git push origin main
